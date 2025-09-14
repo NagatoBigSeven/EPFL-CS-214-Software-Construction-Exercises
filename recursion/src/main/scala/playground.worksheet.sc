@@ -16,4 +16,4 @@ oneTwoMinusThreeFour.tail.head
 // `src/main/scala/recursion/listOps.scala`, implement the `length` function,
 // and uncomment the call below to test your implementation.
 
-// length(oneTwoMinusThreeFour)
+length(oneTwoMinusThreeFour)
