@@ -7,8 +7,7 @@ def removeDuplicates(l: IntList): IntList =
   l match
     case IntNil() => IntNil()
     case IntCons(hd, tl) =>
-      if contains(tl, hd) then removeDuplicates(tl)
-      else IntCons(hd, removeDuplicates(tl))
+      IntCons(hd, removeDuplicates(remove(tl, hd)))
 
 def remove(l: IntList, n: Int): IntList =
   l match

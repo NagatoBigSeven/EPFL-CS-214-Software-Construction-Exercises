@@ -6,8 +6,8 @@ def squareAndMultiply(x: Double, n: Int): Double =
   else if x == 1 then
     1
   else if n == 0 then
-    0
+    1
   else if n % 2 == 0 then
     squareAndMultiply(x * x, n / 2)
   else
-    x * squareAndMultiply(x, n - 1)
+    x * squareAndMultiply(x * x, n / 2)
